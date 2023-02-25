@@ -6,21 +6,54 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   background-color: goldenrod;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 20px;
+}
+
+nav a {
+  margin: 10px;
 }
 
 main {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+h1 {
+  display: flex;
+  flex-wrap: wrap; 
   justify-content: space-evenly;
 }
 
-section {
+section h2 {
   display: flex;
+  flex-wrap: wrap;
+  font-size: 30px;
+  font-style: italic;
+}
+
+div {
+  font-size: 20px;
+}
+
+@media and (max-width:768) {
+  nav {
+    flex-direction: column;
+  }
 }
 
 .hero {
   height: 200px;
+  line-height: 350px;
   background-color: blueviolet;
+  font-size: xx-large;
+  text-align: end;
 }
