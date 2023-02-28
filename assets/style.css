@@ -61,7 +61,7 @@ div {
   font-size: 20px;
 }
 
-@media and (max-width:768) {
+@media and (min-width:768) {
   nav {
     flex-direction: column;
   }
@@ -75,9 +75,15 @@ div {
   text-align: end;
 }
 
-.assignments {
+.side-bar {
+  display: flex;
+  background-color: aliceblue;
+}
+
+.items {
+  display: flex;
   flex-wrap: wrap;
-  background-color: seagreen;
+  background-color: grey;
 }
 
 .footer {
@@ -85,5 +91,5 @@ div {
   line-height: 150px;
   text-align: center;
   font-size: x-large;
-  background-color: aqua;
+  background-color: lightcyan;
 }
