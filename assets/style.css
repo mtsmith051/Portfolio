@@ -15,16 +15,17 @@ header {
   align-items: center;
 }
 
-nav ul {
-  display: flex;
+nav a {
   justify-content: space-between;
   font-size: 20px;
-}
-
-nav a {
   margin: 10px;
   padding-left: 20px;
 }
+
+div a {
+    margin: 10px;
+    padding-left: 20px;
+  }
 
 main {
   flex-grow: 1;
@@ -67,7 +68,7 @@ div {
   }
 }
 
-.hero {
+.hero, {
   height: 200px;
   line-height: 350px;
   background-color: aliceblue;
