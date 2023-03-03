@@ -1,12 +1,18 @@
 * {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
+  margin: 0;
+  padding: 0;
 }
 
+
+
+/* HEADER/NAV */
 header {
   display: flex;
   justify-content: space-between;
@@ -22,75 +28,137 @@ nav a {
   padding-left: 20px;
 }
 
+/* Contact/div */
 div a {
-    margin: 10px;
-    padding-left: 20px;
-  }
-
-main {
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
   justify-content: space-between;
+  margin: 10px;
+  padding-left: 20px;
 }
 
-h1 {
+section {
   display: flex;
-  flex-wrap: wrap; 
+  margin: 2em 0 2em 0;
+  justify-content: center;
+}
+
+/* Content headers */
+section h2 {
+  text-align: center;
+  flex-basis: 20%;
+}
+
+section div {
+  margin-left: 2em;
+  margin-right: 5em;
+  width: 85%;
+}
+
+
+
+/* h1 {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: space-evenly;
 }
 
 section {
   display: flex;
+  margin: 2em;
 }
 
 section h2 {
-  flex: 1;
-  display: flex;
-  flex-wrap: wrap;
+
+  width: 30%;
   font-size: 30px;
   font-style: italic;
-  margin: 10px;
-  padding-right: 10px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.workRow {
+  display: flex;
+}
+/* 
 section div {
   flex: 4;
+  width: 80%;
+  margin-left: auto;
 }
 
 div {
   font-size: 20px;
 }
 
-@media and (min-width:768) {
+@media screen and (min-width: 768) {
   nav {
     flex-direction: column;
   }
-}
+} */
 
-.hero, {
+.hero {
   height: 200px;
-  line-height: 350px;
-  background-color: aliceblue;
-  font-size: xx-large;
-  text-align: end;
+  /* line-height: 350px; */
+  background-image: url("./images/binarycode.png");
+
+  width: 100vw;
+  background-position: 50%;
+  background-size: contain;
+  /* font-size: xx-large; */
+  /* text-align: end; */
 }
 
-.side-bar {
-  display: flex;
-  background-color: aliceblue;
+img {
+  width: 100%;
+  height: 100%;
 }
+/* 
+.side-bar {
+  background-color: aliceblue;
+  width: 10px;
+} */
 
 .items {
-  display: flex;
-  flex-wrap: wrap;
-  background-color: grey;
+  font-size: medium;
+  min-height: 200px;
+  flex-basis: calc(50% - 1rem);
+  margin: .5rem;
+}
+
+.large-item {
+  min-height: 450px;
+  flex-basis: 100%;
 }
 
 .footer {
   height: 100px;
-  line-height: 150px;
   text-align: center;
   font-size: x-large;
   background-color: lightcyan;
+}
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content-container {
+  flex-basis: 77%;
+}
+
+/* Tablets - header changes color */
+@media screen and (max-width: 992px) {
+  section {
+    flex-direction: column;
+  }
+
+}
+
+
+/* Small smartphones - image placeholders change color */
+@media screen and (max-width: 576px) {
 }
